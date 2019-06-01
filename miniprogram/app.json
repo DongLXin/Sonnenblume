@@ -2,6 +2,8 @@
   "pages": [
     "page/component/main",
     "page/component/index",
+    "page/component/test",
+    "page/component/module/showTime/showTime",
     "page/component/pages/view/view",
     "page/component/pages/scroll-view/scroll-view",
     "page/component/pages/swiper/swiper",
