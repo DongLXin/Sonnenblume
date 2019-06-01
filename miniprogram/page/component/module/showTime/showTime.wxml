@@ -1,0 +1,21 @@
+<import src="../../../common/head.wxml" />
+<import src="../../../common/foot.wxml" />
+
+<view class="container">
+  <template is="head" data="{{title: '快乐时光'}}"/>
+
+  <view class="page-body">
+   <view class="index-bd">
+    <view class="kind-list">
+      <block wx:for-items="{{list}}" wx:key="{{item.time}}">
+        <view class="kind-list-item">
+          <view id="{{item.time}}" class="kind-list-item-hd {{item.time ? 'kind-list-item-hd-show' : ''}}">
+            <view class="kind-list-text">{{item.time}}</view>
+          </view>
+        </view>
+      </block>
+    </view>
+    </view>
+  </view>
+  <template is="foot" />
+</view>
